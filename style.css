@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: lightgray;
+    padding: 10px;
+    height: 960px;
+    width: 960px;
+    position:absolute;
+    
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.gridColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    flex: 1;
+
+}
+
+.gridBox {
+    background-color: white;
+    height: 10px;
+    width: auto;
+    margin: 2px;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    flex: auto;
+}
+
