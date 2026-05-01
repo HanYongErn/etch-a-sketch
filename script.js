@@ -27,7 +27,6 @@ function getRandomRGB() {
 
 function darken(color) {
     color = color - (color * 0.1);
-    console.log(color);
     return Math.floor(color);
 }
 
@@ -46,12 +45,9 @@ eachBox.forEach((eachBox => {
             //fill in random color if its white
             let color = eachBox.style.backgroundColor = getRandomRGB();
             eachBox.setAttribute('id', color);
-            //eachBox.setAttribute('class', color);
-            console.log(eachBox.id);
             eachBox.setAttribute('style', `background-color: ${color}`);
         } else {
             const rgbOri = eachBox.id.slice(4,-1).split(',');
-            console.log(rgbOri);
             let rgbNew = []
             if(eachBox.id ==  eachBox.style.backgroundColor) {
                 for (const rgbCode of rgbOri) {
